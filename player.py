@@ -1,5 +1,6 @@
 from tabulate import tabulate
 
+import skills
 import osa
 import mutations
 import secret_organizations
@@ -18,6 +19,8 @@ class Troubleshooter:
         self.service_group = service_groups.get_service_group()
         self.mutation = mutations.get_mutation()
         self.secret_organization = secret_organizations.get_secret_organizaton()
+
+        self.skills = skills.Skills()
 
         self.items = items.basic
 
